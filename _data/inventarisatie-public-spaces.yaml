@@ -1,0 +1,226 @@
+---
+-
+    id: 1
+    categorie: open
+    vraag: Is de broncode van de software beschikbaar zonder extra kosten?  
+    relevant: 
+    score: 
+    toelichting: Iedereen kan de code bekijken, gemakkelijk begrijpen en goed herleidbaar.
+    opmerkingen: De code is zowel door iedereen te bekijken en is goed herleidbaar.
+    uitzoeken: 
+-
+    id: 2
+    categorie: open
+    vraag: Kan de broncode worden hergebruikt in andere nieuwe software? 
+    relevant: 
+    score: 
+    toelichting: Iedereen kan zonder problemen in de broncode werken en zijn eigen programma ervan distribueren.
+    opmerkingen: Iedereen kan zonder problemen in de broncode werken en zijn eigen programma ervan distribueren.
+    uitzoeken: 
+-
+    id: 3
+    categorie: open
+    vraag: Opereert het software-ecosysteem onafhankelijk van enige overheid, commerciële of bepaalde politieke invloed?
+    relevant: 
+    score: 
+    toelichting: Komen overheidsbeleid, winstoogmerk of andere zaken voor de gebruiker? 
+    opmerkingen: Komen overheidsbeleid, winstoogmerk of andere zaken voor de gebruiker? 
+    uitzoeken: 
+-
+    id: 4
+    categorie: transparant
+    vraag: Kan de gebruiker zien welke gegevens er worden opgeslagen?
+    relevant: 
+    score: 
+    toelichting: Doordat dit expliciet vermeld wordt of de gebruiker deze zelf invoert.
+    opmerkingen: Doordat dit expliciet vermeld wordt of de gebruiker deze zelf invoert.
+    uitzoeken: 
+-
+    id: 5
+    categorie: transparant
+    vraag: De gebruiker kan zijn eigen opgeslagen gegevens inzien via een interface?
+    relevant: 
+    score: 
+    toelichting: Is er een interface om dit te bekijken?
+    opmerkingen: 
+    uitzoeken: 
+-
+    id: 6
+    categorie: transparant
+    vraag: Wordt er gecommuniceerd waar de opgeslagen gegevens voor gebruikt worden?
+    relevant: 
+    score: 
+    toelichting: 
+    opmerkingen: 
+    uitzoeken: 
+-
+    id: 7
+    categorie: transparant
+    vraag: Is het beleid van het software-ecosysteem volledig te controleren?
+    relevant: 
+    score: 
+    toelichting: 
+    opmerkingen: Zaken als algemene voorwaarden, privacystatement, klachtenprocedure,  huisregels, statuten, jaarrekeningen zijn beschikbaar?
+    uitzoeken: 
+-
+    id: 8
+    categorie: transparant
+    vraag: Zijn de voorwaarden en procedures in begrijpelijke taal opgesteld?
+    relevant: 
+    score: 
+    toelichting: 
+    opmerkingen: 
+    uitzoeken: 
+-
+    id: 9
+    categorie: transparant
+    vraag: Is er een organisatie ingericht die gebruikers invloed laat hebben op (koers van) de software?
+    relevant: 
+    score: 
+    toelichting: Ofwel direct door de community ofwel indirect via een orgaan die de gebruiker vertegenwoordigd.
+    opmerkingen: Ofwel direct door de community ofwel indirect via een orgaan die de gebruiker vertegenwoordigd.
+    uitzoeken: 
+-
+    id: 10
+    categorie: aansprakelijk
+    vraag: Zijn gebruikers op authenticiteit gecontroleerd?
+    relevant: 
+    score: 
+    toelichting: Weten we zeker wie de gebruiker is? Alleen relevant wanneer de gebruiker zelf content levert.
+    opmerkingen: Weten we zeker wie de gebruiker is? Alleen relevant wanneer de gebruiker zelf content levert.
+    uitzoeken: 
+-
+    id: 11
+    categorie: aansprakelijk
+    vraag: De bron van content kan worden achterhaald?
+    relevant: 
+    score: 
+    toelichting: Faciliteert de tool het om op de juiste manier aan bronvermelding te doen?
+    opmerkingen: Faciliteert de tool het om op de juiste manier aan bronvermelding te doen?
+    uitzoeken: 
+-
+    id: 12
+    categorie: aansprakelijk
+    vraag: Distributieketen en bewerkingen op de content worden bijgehouden en kunnen worden achterhaald?
+    relevant: 
+    score: 
+    toelichting: Is er sprake van versiebeheer?
+    opmerkingen: Is er sprake van versiebeheer?
+    uitzoeken: 
+-
+    id: 13
+    categorie: aansprakelijk
+    vraag: De gebruikte software beschermt de content van gebruikers zo goed mogelijk? 
+    relevant: 
+    score: 
+    toelichting: Wordt er bijvoorbeeld gebruik gemaakt van pseudonimiseren, encryptie en access control?
+    opmerkingen: Wordt er gebruik gemaakt van pseudonimiseren, encryptie en access control?
+    uitzoeken: 
+-
+    id: 14
+    categorie: aansprakelijk
+    vraag: De gebruikte software beschermt de gebruikersgegevens van gebruikers zo goed mogelijk?
+    relevant: 
+    score: 
+    toelichting: Wordt er bijvoorbeeld gebruik gemaakt van pseudonimiseren, encryptie en access control?
+    opmerkingen: Wordt er gebruik gemaakt van pseudonimiseren, encryptie en access control?
+    uitzoeken: 
+-
+    id: 15
+    categorie: aansprakelijk
+    vraag: De gebruikte software claimt geen eigenaarschap over de persoonlijke data van de gebruiker?
+    relevant: 
+    score: 
+    toelichting: Blijft data van de VPRO? 
+    opmerkingen: Blijft data van de eigen organisatie? 
+    uitzoeken: 
+-
+    id: 16
+    categorie: autonoom
+    vraag: Er is geen advertentiemodel dat gebruik maakt van trackers die bezoekers volgen?
+    relevant: 
+    score: 
+    toelichting: Wordt er gebruik gemaakt van tracking pixels of andere vormen van tracking technologie?
+    opmerkingen: Wordt er gebruik gemaakt van tracking pixels of andere vormen van tracking technologie?
+    uitzoeken: 
+-
+    id: 17
+    categorie: autonoom
+    vraag: Gebruikersdata wordt alleen gebruikt binnen de eigen site? 
+    relevant: 
+    score: 
+    toelichting: 
+    opmerkingen: Dus niet met andere partijen gedeeld
+    uitzoeken: 
+-
+    id: 18
+    categorie: autonoom
+    vraag: Kan een gebruiker er voor kiezen welke data gedeeld wordt zonder belangrijke functionaliteit te missen?
+    relevant: 
+    score: 
+    toelichting: Wordt de gebruiker verplicht om alles in te vullen? Kan een gebruiker er voor kiezen welke data gedeeld wordt zonder belangrijke functionaliteit te missen?
+    opmerkingen: Wordt de gebruiker verplicht om alles in te vullen? Heeft de gebruiker invloed op welke persoonlijke data, content of interacties worden opgeslagen indien van toepassing.
+    uitzoeken: 
+-
+    id: 19
+    categorie: autonoom
+    vraag: Kan gepubliceerde content en/of gebruikersdata worden geëxporteerd?
+    relevant: 
+    score: 
+    toelichting: Direct of indirect via de beheerder.
+    opmerkingen: Direct of indirect via de beheerder.
+    uitzoeken: 
+-
+    id: 20
+    categorie: autonoom
+    vraag: Kan gepubliceerde content en gebruikersdata worden verwijderd?
+    relevant: 
+    score: 
+    toelichting: Direct of indirect via de beheerder.
+    opmerkingen: Direct of indirect via de beheerder.
+    uitzoeken: 
+-
+    id: 21
+    categorie: Gebruikersgericht
+    vraag: Faciliteert de tool het om zonder persoonsgegevens te werken als dat mogelijk is?
+    relevant: 
+    score: 
+    toelichting: Faciliteert de tool het om zonder persoonsgegevens te werken als dat mogelijk is?
+    opmerkingen: Er is er nagedacht of het voor het product of dienst écht nodig is om persoonsgegevens te verwerken. (Of had er gewerkt kunnen worden  met volledig geanonimiseerde gegevens?)
+    uitzoeken: 
+-
+    id: 22
+    categorie: Gebruikersgericht
+    vraag: Is er sprake van data-minimalisatie?
+    relevant: 
+    score: 
+    toelichting: Wordt alleen data opgeslagen die echt nodig is?
+    opmerkingen: Wordt alleen data opgeslagen die echt nodig is?
+    uitzoeken: 
+-
+    id: 23
+    categorie: Gebruikersgericht
+    vraag: Zijn bewaartermijn en het faciliteren van de rechten van de betrokkenen proportioneel?
+    relevant: 
+    score: 
+    toelichting: 
+    opmerkingen: Het doel bepaalt de opslagperiode van de gebruikersgegevens.
+    uitzoeken: 
+-
+    id: 24
+    categorie: Gebruikersgericht
+    vraag: Is de software ingericht volgens privacy by default? 
+    relevant: 
+    score: 
+    toelichting: Is standaard ingesteld dat zo min mogelijk mensen bij data mogen?
+    opmerkingen: Is standaard ingesteld dat zo min mogelijk mensen bij data mogen/het bewaartermijn zo kort mogelijk is/zo min mogelijk data wordt opgeslagen?
+    uitzoeken: 
+-
+    id: 25
+    categorie: Gebruikersgericht
+    vraag: Er wordt geen gebruik gemaakt van dark patterns?
+    relevant: 
+    score: 
+    toelichting: Is standaard ingesteld dat zo min mogelijk mensen bij data mogen?
+    opmerkingen: Geen van de patterns op https://www.darkpatterns.org/types-of-dark-pattern wordt ingezet.
+    uitzoeken: 
