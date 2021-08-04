@@ -11,7 +11,7 @@
 
 <h1>Public Spaces Inventarisatie</h1>
 
-<p>Source: https://github.com/jgroenen/inventarisatie-public-spaces</p>
+<center>Source: <a href="https://github.com/jgroenen/inventarisatie-public-spaces">https://github.com/jgroenen/inventarisatie-public-spaces</a></center>
 
 <style>
     html, body {
@@ -35,6 +35,9 @@
         margin: 0;
         line-height: 1.2em;
     }
+    label {
+        cursor: pointer;
+    }
     #scores, .vraag {
         margin: 20px;
         max-width: 400px;
@@ -45,6 +48,8 @@
     }
 </style>
 
+<hr>
+
 <div id="scores"></div>
 
 {% for vraag in site.data.vragen %}
@@ -53,8 +58,8 @@
         <h2>Vraag {{ vraag.id }}: {{ vraag.vraag }}</h2>
         <p>{{ vraag.toelichting }}</p>
         <div style="display: flex; width: 100%">
-            <div style="flex: 1"><input type="checkbox" data-name="relevant" data-cat="{{ vraag.categorie }}"> relevant</div>
-            <div style="flex: 1"><input type="checkbox" data-name="voldoet" data-cat="{{ vraag.categorie }}"> voldoet</div>
+            <div style="flex: 1"><label><input type="checkbox" data-name="relevant" data-cat="{{ vraag.categorie }}"> relevant</label></div>
+            <div style="flex: 1"><label><input type="checkbox" data-name="voldoet" data-cat="{{ vraag.categorie }}"> voldoet</label></div>
         </div>
         <!--
             opmerking: {{ vraag.opmerking }}<br>
@@ -89,6 +94,8 @@ function refreshTotals() {
 }
 
 $("input").click(refreshTotals);
+
+refreshTotals();
 
 </script>
 
