@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <title>Public Spaces Inventarisatie</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>  
+</head>
+
+<body>
+
+<h1>Public Spaces Inventarisatie</h1>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.4em;
+    }
+    .categorie {
+        display: inline-block;
+        background: #DDD;
+        padding: 4px 8px;
+        border-radius: 2px;
+        margin: 10px;
+    }
+    h1 {
+        margin: 20px;
+        text-align: center;
+    }
+    h2 {
+        margin: 0;
+        line-height: 1.2em;
+    }
+    #scores, .vraag {
+        margin: 20px;
+        max-width: 400px;
+        margin: auto;
+    }
+    #scores {
+        text-align: center;
+    }
+</style>
+
+<div id="scores"></div>
+
+{% for vraag in site.data.vragen %}
+    <div class="vraag">
+        <div class="categorie">{{ vraag.categorie }}</div>
+        <h2>Vraag {{ vraag.id }}: {{ vraag.vraag }}</h2>
+        <p>{{ vraag.toelichting }}</p>
+        <div style="display: flex; width: 100%">
+            <div style="flex: 1"><input type="checkbox" data-name="relevant" data-cat="{{ vraag.categorie }}"> relevant</div>
+            <div style="flex: 1"><input type="checkbox" data-name="voldoet" data-cat="{{ vraag.categorie }}"> voldoet</div>
+        </div>
+        <!--
+            opmerking: {{ vraag.opmerking }}<br>
+            uitzoeken: {{ vraag.uitzoeken }}<br>
+        -->
+        <hr>
+    </div>
+{% endfor %}
+
+<script>
+
+function refreshTotals() {
+    var cats = [];
+    $("input").each(function () {
+        if (!cats[$(this).data("cat")]) {
+            cats[$(this).data("cat")] = {
+                'relevant': 0,
+                'voldoet': 0
+            };
+        }
+        if ($(this).prop("checked")) {
+            cats[$(this).data("cat")][$(this).data('name')]++;
+        }
+    });
+    for (cat in cats) {
+        cats[cat]['score'] = cats[cat]['relevant'] ? (cats[cat]['voldoet'] / cats[cat]['relevant']) * 100 : 0;
+    }
+    $("#scores").html("");
+    for (cat in cats) {
+        $("#scores").append(`<div class='categorie'>${cat} (${cats[cat]['score']}%)</div>`);
+    }
+}
+
+$("input").click(refreshTotals);
+
+</script>
+
+</body>

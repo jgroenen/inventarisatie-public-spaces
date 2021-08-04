@@ -181,7 +181,7 @@
     uitzoeken: 
 -
     id: 21
-    categorie: Gebruikersgericht
+    categorie: gebruiksgericht
     vraag: Faciliteert de tool het om zonder persoonsgegevens te werken als dat mogelijk is?
     relevant: 
     score: 
@@ -190,7 +190,7 @@
     uitzoeken: 
 -
     id: 22
-    categorie: Gebruikersgericht
+    categorie: gebruiksgericht
     vraag: Is er sprake van data-minimalisatie?
     relevant: 
     score: 
@@ -199,7 +199,7 @@
     uitzoeken: 
 -
     id: 23
-    categorie: Gebruikersgericht
+    categorie: gebruiksgericht
     vraag: Zijn bewaartermijn en het faciliteren van de rechten van de betrokkenen proportioneel?
     relevant: 
     score: 
@@ -208,7 +208,7 @@
     uitzoeken: 
 -
     id: 24
-    categorie: Gebruikersgericht
+    categorie: gebruiksgericht
     vraag: Is de software ingericht volgens privacy by default? 
     relevant: 
     score: 
@@ -217,7 +217,7 @@
     uitzoeken: 
 -
     id: 25
-    categorie: Gebruikersgericht
+    categorie: gebruiksgericht
     vraag: Er wordt geen gebruik gemaakt van dark patterns?
     relevant: 
     score: 
