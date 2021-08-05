@@ -129,11 +129,13 @@ function refreshTotals() {
         }
     });
     for (cat in cats) {
-        cats[cat]['score'] = cats[cat]['relevant'] ? (cats[cat]['voldoet'] / cats[cat]['relevant']) * 100 : 0;
+        cats[cat]['score'] = Math.floor((cats[cat]['voldoet'] / cats[cat]['relevant']) * 100);
     }
     $("#scores").html("");
     for (cat in cats) {
-        $("#scores").append(`<div class='categorie'>${cat} (${cats[cat]['score']}%)</div>`);
+        if (cats[cat]['relevant']) {
+            $("#scores").append(`<div class='categorie'>${cat} (${cats[cat]['score']}%)</div>`);
+        }
     }
 }
 
