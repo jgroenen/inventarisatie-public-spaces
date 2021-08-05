@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
+    <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Public Spaces Inventarisatie</title>
+    <link href="http://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -17,14 +20,21 @@
     html, body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        font-family: geomanist, sans-serif;
         line-height: 1.4em;
+        background: #f1f1f1;
     }
     .categorie {
         display: inline-block;
         background: #DDD;
         padding: 4px 8px;
         border-radius: 2px;
+        margin: 10px 0;
+        background: #E1231E;
+        color: #ffffff;
+        font-weight: 900;
+    }
+    #scores .categorie {
         margin: 10px;
     }
     h1 {
@@ -43,8 +53,22 @@
         max-width: 400px;
         margin: auto;
     }
+    .vraag {
+        background: #ffffff;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #aaaaaa;
+    }
     #scores {
         text-align: center;
+    }
+    a {
+        color: #E1231E;
+    }
+    .checkbox {
+        text-align: center;
+        flex: 1;
+        font-size: 1.4em;
     }
 </style>
 
@@ -58,14 +82,13 @@
         <h2>Vraag {{ vraag.id }}: {{ vraag.vraag }}</h2>
         <p>{{ vraag.toelichting }}</p>
         <div style="display: flex; width: 100%">
-            <div style="flex: 1"><label><input type="checkbox" data-name="relevant" data-cat="{{ vraag.categorie }}"> relevant</label></div>
-            <div style="flex: 1"><label><input type="checkbox" data-name="voldoet" data-cat="{{ vraag.categorie }}"> voldoet</label></div>
+            <div class="checkbox"><label><input type="checkbox" data-name="relevant" data-cat="{{ vraag.categorie }}"> relevant</label></div>
+            <div class="checkbox"><label><input type="checkbox" data-name="voldoet" data-cat="{{ vraag.categorie }}"> voldoet</label></div>
         </div>
         <!--
             opmerking: {{ vraag.opmerking }}<br>
             uitzoeken: {{ vraag.uitzoeken }}<br>
         -->
-        <hr>
     </div>
 {% endfor %}
 
